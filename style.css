@@ -13,8 +13,9 @@ body, html {
 
 .left {
     background-image: url("parrot.jpg");
+    background-size: 40vw 100vh;
     height: 100vh;
-    width: 40vh;
+    width: 35vw;
     display: flex;
     position: relative;
     flex-direction: column;
@@ -23,7 +24,7 @@ body, html {
 footer {
     position: absolute;
     bottom: 0;
-    width: 40vh;
+    width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,4 +36,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgb(243, 249, 248);
+    font-size: 3rem;
+    height: 12vh;
+    position: relative;
+    top: 28rem;
 }
