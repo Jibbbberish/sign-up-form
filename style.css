@@ -15,7 +15,8 @@ body, html {
     background-image: url("parrot.jpg");
     background-size: 40vw 100vh;
     height: 100vh;
-    width: 35vw;
+    --left-width: 40vw;
+    width: var(--left-width);
     display: flex;
     position: relative;
     flex-direction: column;
@@ -24,7 +25,7 @@ body, html {
 footer {
     position: absolute;
     bottom: 0;
-    width: 35vw;
+    width: var(--left-width);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,4 +42,64 @@ footer {
     height: 12vh;
     position: relative;
     top: 28rem;
+}
+
+.right {
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    --right-width: 60vw;
+    width: var(--right-width);
+    flex-direction: column;
+}
+
+#inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 20px;
+    padding-bottom: 45px;
+    box-shadow: 0 5px 10px rgb(175, 175, 175);
+    align-items: center;
+    justify-content: center;
+}
+
+#inputsText {
+    display: flex;
+    flex-direction: column;
+}
+
+#containOne, #containTwo, #containThree {
+    display: flex;
+    padding: 10px;
+    gap: 6rem;
+}
+
+#para {
+    margin: 10rem 3rem 5rem 2rem;
+}
+
+section>section {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 2px solid rgb(182, 182, 182, 0.4);
+    border-radius: 6px;
+}
+
+#log {
+    color: rgb(255, 187, 0);
+    font-weight: 700;
+}
+
+button {
+    padding: 10px 30px;
+    border: rgb(235, 235, 235);
+    background-color: rgb(255, 187, 0);
+    border-radius: 10px;
+}
+
+#account {
+    padding: 30px;
 }
