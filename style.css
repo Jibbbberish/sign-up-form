@@ -103,3 +103,13 @@ button {
 #account {
     padding: 30px;
 }
+
+input:focus {
+    box-shadow: 1px 2px 5px rgb(175, 175, 175);
+    border-color: rgb(18, 99, 237);
+    outline: none;
+}
+
+input:invalid {
+    border-color: rgb(244, 50, 50);
+}
